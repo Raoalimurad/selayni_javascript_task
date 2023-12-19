@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and drop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="img" draggable="true"></div>
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+
+    <script>
+const boxes = document.querySelectorAll(".box");
+const img = document.querySelector(".img");
+
+boxes.forEach((box) => {
+    box.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        box.classList.add("hovered");
+    });
+
+    box.addEventListener("dragleave",() => {
+        box.classList.remove("hovered");
+
+    });
+    box.addEventListener("drop",() => {
+        box.appendChild(img);
+        box.classList.remove("hovered");
+    })
+});
+
+
+
+
+    </script>
+</body>
+</html>

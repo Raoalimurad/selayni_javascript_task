@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f7fb;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+   width: 350px;
+
+   }
+   .container .box{
+       height: 160px;
+       position: relative;
+       width: 160px;
+       border: 2px solid #333;
+       border-radius: 12px;
+   }
+.img{
+    background-image: url("man.jpg");
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+}
+.box.hovered {
+    border: 2px dashed #333;
+}
