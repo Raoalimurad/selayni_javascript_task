@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.342),rgba(255, 255, 0, 0.349));
+
+}
+.container{
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.rangebox{
+    
+    cursor: pointer;
+}
+.inputbox{
+    position: relative;
+}
+.inputbox span{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+}
+#passbox{
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    margin-block: 10px;
+    background-color: white;
+
+}
+.row{
+    display: flex;
+    margin-block: 10px;
+}
+.row p , .row label {
+    flex-basis: 100%;
+    font-size: 15px;
+}
+.row input[type = "checkbox"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.genBtn{
+    border: none;
+    outline: none;
+    padding: 15px;
+    background-color: rgba(255, 0, 0, 0.315);
+    margin-block: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.genBtn:hover{
+    background-color: rgba(255, 0, 0, 0.466);
+    color: white;
+}
