@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.336),rgba(255, 255, 0, 0.384));
+}
+.container p{
+    height: 100px;
+    width: 550px;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.377),rgba(255, 255, 0, 0.384));
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 24px;
+   padding-top: 30px;
+   font-weight: bold;
+ 
+}
