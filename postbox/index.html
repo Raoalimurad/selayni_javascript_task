@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook post clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/45a0af6ce5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="postbox">
+            <div class="profile">
+                <div class="heading">
+                  <h1>Create Post</h1>
+                </div>
+                </div>
+                  <div class="postimg">
+                    <img src="profile-img.jpg" alt="">
+                    <h3>Rao ALI MURAD</h3>
+                  </div>
+                  <div class="friends">
+                    <i class="fa-solid fa-users "></i>
+                    <span>Friends</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </div>
+             
+
+            
+            <div class="text-area">
+              <textarea placeholder="what's on your mind ?" id="textarea" required></textarea>
+            </div>
+            <div id="disable">
+            <div class="range">
+                <input type="range" onclick="fontSizeChange()">
+            </div>
+            <div class="text">
+              <img src="italic.png" onclick="changeItalicStyle()">
+              <img src="bold.png" onclick="changeBoldStyle()">
+              <img src="underline.png" onclick="underline()">
+              <img src="textalign.png" onclick="textAlign()">
+              <img src="text align right.png" onclick="textright() ">
+            </div>
+           
+            <div class="background">
+             <img  onclick=" setBackground()" src="back1re.jpg" alt="">
+             <img onclick=" setBackground()"  src="backup.jpg" alt="">
+             <img onclick=" setBackground()"     src="back3re.jpg" alt="">
+             <img onclick=" setBackground()"     src="back4.jpg" alt="">
+             <img onclick=" setBackground()"     src="back5.jpg" alt="">
+             <img onclick=" setBackground()"  src="back6.jpg" alt="">
+            </div>
+            <div class="selection">
+                <div class="textcolor">
+                <input type="color" onchange="changeColour()">
+                <p>Text Color</p>
+            </div>
+            <div class="backgroundColour">
+                <input type="color" onchange="changebackground()">
+                <p>Background Colour</p>
+            </div>
+            </div>
+            <div class="emoji">
+                <select name="" id="emojies" onclick="setEmoji()">
+                    <option value="😎">😎</option>
+                    <option value="😂">😂</option>
+                    <option value="😍">😍</option>
+                    <option value="😜">😜</option>
+                    <option value="🥳">🥳</option>
+                    <option value="😷">😷</option>
+                    <option value="😢">😢</option>
+                    <option value="🤔">🤔</option>
+                    <option value="😊">😊</option>
+                    <option value="😡">😡</option>
+                    <option value="👍">👍</option>
+                    <option value="❤️">❤️</option>
+                    <option value="🌊">🌊</option>
+                    <option value="🍎">🍎</option>
+                    <option value="🎁">🎁</option>
+                    <option value="🌙">🌙</option>
+                    <option value="🌻">🌻</option>
+                    <option value="🌸">🌸</option>
+                    <option value="🎧">🎧</option>
+                    <option value="🚀">🚀</option>
+                    <option value="🚲">🚲</option>
+                </select>
+            </div>
+        </div>
+            <div class="commentbox" onclick="toggleLike()" id="display">
+                <div>
+                    <i class="fa-solid fa-heart" id="likeIcon"></i><span id="likeText">Like</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-comment"></i><span>Comment</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-share"></i><span>Share</span>
+                </div>
+            </div>
+            <div class="post">
+               <button onclick="showpost()" class="btn">Post</button>
+              
+            </div>
+
+       
+        <!-- <section>
+            <div class="choiceBox">
+                <div class="audience">
+                    <i class="fa-solid fa-left-long"></i> 
+                    <h4>Select Audience</h4>
+                </div>
+                <div class="textofpost">
+                    <h5>Who can you see post ?</h5>
+                    <p>Your post will show up in News Feed,on your Profile and in search result</p>
+                </div>
+                <div class="boxes">
+                    <i class="fa-solid fa-globe"></i>
+                      <h3>Public</h3>
+                    <span></span>
+                </div>
+                <div class="boxes">
+                    <i class="fa-solid fa-user-group"></i>
+                      <h3>Friends</h3>
+                    <span></span>
+                </div>
+                <div class="boxes">
+                    <i class="fa-solid fa-user"></i>
+                      <h3>Specific</h3>
+                    <span></span>
+                </div>
+                <div class="boxes">
+                    <i class="fa-solid fa-lock"></i>
+                      <h3>Only me</h3>
+                    <span></span>
+                </div>
+                <div class="boxes">
+                    <i class="fa-solid fa-gear"></i>
+                      <h3>custom</h3>
+                    <span></span>
+                </div>
+
+            </div>
+        </section> -->
+    </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
