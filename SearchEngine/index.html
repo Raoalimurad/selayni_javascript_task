@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="https://kit.fontawesome.com/45a0af6ce5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+</head>
+<body>
+<header>
+    <div class="logoName animate__animated animate__backInDown">
+        <h1>Rao Car Search Engine</h1>
+    </div>
+    <div class="logo animate__animated animate__backInDown">
+        <img src="images/logo.avif" alt="">
+    </div>
+</header>
+
+<div class="searchBox" id="search-box">
+    <div class="searchCompany  animate__animated animate__backInLeft" >
+        <i class="fa-solid fa-car-side"></i>
+        <h3>Search Company</h3>
+        <select name="company" id="company" onchange="modelchange()"></select>
+    </div>
+    <div class="searchModel animate__animated animate__backInDown">
+        <i class="fa-solid fa-car-side"></i>
+        <h3>Search Model</h3>
+        <select name="model" id="model"></select>
+    </div>
+    <div class="searchButton animate__animated animate__backInRight">
+        <i class="fa-solid fa-car-side"></i>
+        <h3>Search Here</h3>
+
+        <button onclick="finalSearch()" class="btn">Search</button>
+    </div>
+</div>
+<div id="show-card" class="showCard unshow">
+
+</div>
+
+<!-- ////////header complete////////// -->
+<div class="main" id="show">
+    <div class="cards" id="car-card">
+      
+    </div>
+
+</div>
+    <div class="owner" id="disappear">
+        <img src="images/caranimation.gif" alt="">
+        <h1 class="animate__animated animate__flip ">WELCOME TO RAO <br/> CAR SEARCH ENGINE</h1>
+      
+        <button onclick="showChoice()"  class="animate__animated animate__slideInDown">Click here</button>
+    </div>
+
+
+    
+<div class="choices" id="choice">
+    <div class="visit animate__animated animate__backInLeft">
+        <i class="fa-solid fa-car-side"></i>
+        <h2>Explore Car </h2>
+        <h3>View our latest collection of cars</h3>
+        <p>Quality Assurance for Customer</p>
+        <h4>We Have Best Cars</h4>
+       
+  <p>Expert Guidance</p>
+  <h4>Test Drive Available for Customer</h4>
+
+        <div class="btn-container">
+        <button onclick="display()">Explore Cars</button>
+    </div>
+
+    </div>
+    <div class="buy  animate__animated animate__backInRight">
+        <i class="fa-solid fa-car-side"></i>
+        <h2>Search Favorite Car</h2>
+        <p>Find the perfect car for you. We have something for everyone.</p>
+        <h4>Get the Best Deal</h4>
+        <p>Our team will help you find the best deal.</p>
+        <h4>Financing Options</h4>
+        <p>We offer flexible financing options.</p>
+        <div class="btn-container">
+            <button onclick="searchFavourite()">Search favourite</button>
+        </div>
+      
+       
+    </div>
+    
+    
+</div>
+<div class="show-img" id="showImg">
+    <img src="images/car-animation-clipart-2.gif" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+    <script src="app.js"></script>
+</body>
+</html>
