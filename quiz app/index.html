@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/45a0af6ce5.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <div class="container " id="container">
+    <div class="user-login">
+        <div class="login">
+            <h2><i class="fa-solid fa-users"></i></h2>
+            <div class="email">
+                <label for="">Enter Email:</label></br>
+                <input type="email" placeholder="Enter Email" id="email">
+            </div>
+            <div class="password"> 
+                <label for="">Enter Password:</label></br>
+                <input type="password" placeholder="Enter password" id="password">
+
+            </div>
+            <div class="btn">
+  <button onclick="submitForm()">Submit</button>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+<!-- <! ///////2 portion of quiz////////////// --> 
+
+<div class="portion2" id="portion">
+
+
+ <header id="header">
+    <div class="user">
+        <h2>RAO QUIZ <i class="fa-solid fa-house"></i> </h2>
+    </div>
+    <div class="logo">
+        <img src="images/user.jpg" alt="">
+    </div>
+ </header>
+ <div class="user-welcome" id="user-welcome">
+    <h2>Welcome to Quiz Portal <span class="welcomeHand">&#128075;</span></h2>
+    <p>Select your course below to take a quiz.</p>
+ </div>
+    <div class="quizes" id="quizes">
+         <div class="quiz  animate__animated animate__backInDown">
+            <h2>CSS</h2>
+            <h5>1 Subject</h5>
+            <button onclick="htmlQestion()" class="btn2">Join</button>
+        </div> 
+        <div class="quiz animate__animated animate__backInDown">
+            <h2>HTML</h2>
+            <h5>1 Subject</h5>
+            <button onclick="cssQestion()" class="btn2">Join</button>
+        </div>
+        <div class="quiz animate__animated animate__backInDown">
+            <h2>Javascript</h2>
+            <h5>1 Subject</h5>
+            <button onclick="javascriptQestion()" class="btn2">Join</button>
+        </div>
+        <div class="quiz  animate__animated animate__backInUp">
+            <h2>TypeScript</h2>
+            <h5>1 Subject</h5>
+            <button onclick="typescriptQestion()" class="btn2">Join</button>
+        </div>
+        <div class="quiz animate__animated animate__backInUp">
+            <h2>Python</h2>
+            <h5>1 Subject</h5>
+            <button onclick="pythonQestion()" class="btn2">Join</button>
+        </div>
+        <div class="quiz animate__animated animate__backInUp">
+            <h2>C++</h2>
+            <h5>1 Subject</h5>
+            <button onclick="cppQestion()" class="btn2">Join</button>
+        </div>
+    </div>
+</div>
+   
+<div class="html-question" id="cssQues">
+    <div class="timer">
+        <div class="remainingTime">
+          <h1>Time Remaining</h1>
+        </div>
+        <div class="time">
+            <h2 id="timeHtml"></h2>
+        </div>
+    </div>
+    <div class="ques">
+        <h2 class="question">Question No 1</h2>
+        <ul>
+            <li>
+                <input type="radio" name="answer" id="ans1" class="answer">
+                <label for="ans1"  id="option1">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans2" class="answer">
+                <label for="ans2" id="option2">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans3" class="answer">
+                <label for="ans3" id="option3">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans4" class="answer">
+                <label for="ans4" id="option4">Option1</label>
+             </li>
+        </ul>
+  
+
+        <button id="submit" class="btn1">Submit</button>
+    </div>
+</div>
+
+ <!-- //////css option /////////  -->
+
+ <div class="html-question" id="htmlques">
+    <div class="timer">
+        <div>
+            <h1>Time Remaining <i class="fa-solid fa-clock"></i></h1>
+        </div>
+        <div class="time">
+            <h2 id="timers"></h2>
+        </div>
+    </div>
+    <div class="ques"> 
+        <h2 class="csquestion">Question No 1</h2>
+        <ul>
+            <li>
+                <input type="radio" name="answer" id="ans1" class="answer">
+                <label for="ans1"  id="Cs1">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans2" class="answer">
+                <label for="ans2" id="Cs2">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans3" class="answer">
+                <label for="ans3" id="Cs3">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans4" class="answer">
+                <label for="ans4" id="Cs4">Option1</label>
+             </li>
+        </ul>
+        <div id="timer"></div>
+
+        <button id="submitbtn" class="btn1">Submit</button>
+    </div>
+</div> 
+ 
+
+
+
+
+<!-- ///////// python part //////////// -->
+
+<div class="html-question" id="pythonques">
+    <div class="timer">
+        <div>
+            <h1>Time Remaining <i class="fa-solid fa-clock"></i></h1>
+        </div>
+        <div class="time">
+            <h2 id="timerOfPython"></h2>
+        </div>
+    </div>
+    <div class="ques">
+        <h2 class="pyquestion">Question No 1</h2>
+        <ul>
+            <li>
+                <input type="radio" name="answer" id="ans1" class="answer">
+                <label for="ans1"  id="py1">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans2" class="answer">
+                <label for="ans2" id="py2">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans3" class="answer">
+                <label for="ans3" id="py3">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans4" class="answer">
+                <label for="ans4" id="py4">Option1</label>
+             </li>
+        </ul>
+        <div id="timer"></div>
+
+        <button id="submitbtnPy" class="btn1">Submit</button>
+    </div>
+</div> 
+
+
+
+
+<!-- ////////TypeScript  part ///// -->
+<div class="html-question" id="typescriptques">
+    <div class="timer">
+        <div>
+            <h1>Time Remaining <i class="fa-solid fa-clock"></i></h1>
+        </div>
+        <div class="time">
+            <h2 id="timerOftypescript"></h2>
+        </div>
+    </div>
+    <div class="ques">
+        <h2 class="typescriptquestion">Question No 1</h2>
+        <ul>
+            <li>
+                <input type="radio" name="answer" id="ans1" class="answer">
+                <label for="ans1"  id="ty1">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans2" class="answer">
+                <label for="ans2" id="ty2">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans3" class="answer">
+                <label for="ans3" id="ty3">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans4" class="answer">
+                <label for="ans4" id="ty4">Option1</label>
+             </li>
+        </ul>
+        <div id="timer"></div>
+
+        <button id="submitbtnty" class="btn1">Submit</button>
+    </div>
+</div> 
+
+<!-- ///////Javascript part /////////// -->
+
+
+
+ 
+<div class="html-question" id="Javascriptques">
+    <div class="timer">
+        <div>
+            <h1>Time Remaining <i class="fa-solid fa-clock"></i></h1>
+        </div>
+        <div class="time">
+            <h2 id="timerOfJavascript"></h2>
+        </div>
+    </div>
+    <div class="ques">
+        <h2 class="Javascriptquestion">Question No 1</h2>
+        <ul>
+            <li>
+                <input type="radio" name="answer" id="ans1" class="answer">
+                <label for="ans1"  id="Js1">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans2" class="answer">
+                <label for="ans2" id="Js2">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans3" class="answer">
+                <label for="ans3" id="Js3">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans4" class="answer">
+                <label for="ans4" id="Js4">Option1</label>
+             </li>
+        </ul>
+        <div id="timer"></div>
+
+        <button id="submitbtnJs" class="btn1">Submit</button>
+    </div>
+</div> 
+
+<!-- /////////// c++ part ////////////////// -->
+
+
+<div class="html-question" id="CppQues">
+    <div class="timer">
+        <div>
+            <h1>Time Remaining <i class="fa-solid fa-clock"></i></h1>
+        </div>
+        <div class="time">
+            <h2 id="timerOfCpp"></h2>
+        </div>
+    </div>
+    <div class="ques">
+        <h2 class="cppQuestion">Question No 1</h2>
+        <ul>
+            <li>
+                <input type="radio" name="answer" id="ans1" class="answer">
+                <label for="ans1"  id="Cpp1">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans2" class="answer">
+                <label for="ans2" id="Cpp2">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans3" class="answer">
+                <label for="ans3" id="Cpp3">Option1</label>
+             </li>
+             <li>
+                <input type="radio" name="answer" id="ans4" class="answer">
+                <label for="ans4" id="Cpp4">Option1</label>
+             </li>
+        </ul>
+        <div id="timer"></div>
+
+        <button id="submitbtnCpp" class="btn1">Submit</button>
+    </div>
+</div> 
+
+
+<div class="score  showScore" id="showscore">
+      <h1 class="heading">Your Result 😊</h1>
+   <div class="container1">
+    <div class="circular-progress">
+        <span class="progress-value">  0%</span>
+    </div>
+    <button class="restart" onclick="reload()">Start Again</button>
+   </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
