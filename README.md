@@ -9,3 +9,6 @@ RANDOM PASSWORD GENERATOR:
 https://randompasswordgeneratorurl.netlify.app/
 NOTE BOOK :
 https://notebooksurl.netlify.app/
+QR CODE GENERATOR:
+https://qrcodegenerateurl.netlify.app/
+
