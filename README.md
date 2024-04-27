@@ -11,4 +11,6 @@ NOTE BOOK :
 https://notebooksurl.netlify.app/
 QR CODE GENERATOR:
 https://qrcodegenerateurl.netlify.app/
+DRAG AND DROP:
+https://dragdropurl.netlify.app/
 
