@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/45a0af6ce5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+
+    
+    <div class="timer adjust">
+        <div class="heading">
+            <button onclick="showTimer()" > <i class="fa-solid fa-clock"></i> Timer</button> 
+        </div>
+        <div id="displaytimer">
+            <h2 id="timer">5m:40s</h2>
+            <button id="startButton" onclick="startTimer()">Start</button>
+            <button id="stopButton" style="display:none" onclick="stopTimer()">Stop</button>
+            <button onclick="resetTimer()">Reset</button> 
+        </div>
+       
+    </div>
+    <div class="stopWatch">
+        <div class="heading" >
+            <button onclick="showcount()"><i class="fa-solid fa-stopwatch-20"></i>  Stopwatch</button>
+               
+        </div>
+        <div id="displaycounter">
+            <h1 id="stopWatchTimer">00:00:00:00</h1>
+            <button onclick="startCount()" id="start">Start</button>
+            <button onclick="stopCount()" id="stop">stop</button>
+            <button onclick="resetCount()">Reset</button>
+        </div>
+      
+    </div>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
