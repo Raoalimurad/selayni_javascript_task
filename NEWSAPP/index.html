@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header >
+        <div class="nav-bar container">
+            
+       
+        <div class="logo">
+             <h3>RaoNews</h3>
+        </div>
+        <nav>
+         <ul>
+            <li id="Cricket" onclick="navItemSearch('Cricket')">Cricket</li>
+            <li id="Education"   onclick="navItemSearch('Education')">Education</li>
+            <li  id="Economics"  onclick="navItemSearch('Economics')">Economics</li>
+            <li   id="Technology" onclick="navItemSearch('Technology')">Technology</li>
+         </ul>
+        </nav>
+        <div class="searchNews">
+         <input type="text" placeholder="Search here..." id="serachInput">
+         <button id="serachBtn">Search</button>
+        </div>
+    </div>
+    </header>
+
+    <!-- card section start -->
+    <main>
+        <div class="card-container container" id="card-container">
+          
+        </div>
+    </main>
+
+
+
+
+
+
+<template id="card-template">
+
+    <div class="card">
+        <div class="card-header">
+       <img src="https://via.placeholder.com/400x200" alt="" id="img-news">
+        </div>
+         <div class="card-content">
+            <h3 id="news-title">This is a title</h3>
+            <h6 id="news-source">End 17/5/2024</h6>
+            <p id="news-des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium adipisci assumenda ex temporibus necessitatibus explicabo voluptate? Voluptatem unde hic reprehenderit dolorem iusto voluptatibus magni molestias dolore excepturi officiis, nisi quas.</p>
+         </div>
+
+       </div>
+</template>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
